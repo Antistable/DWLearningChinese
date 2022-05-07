@@ -1,6 +1,7 @@
 # ⇱中文⇲
 
->解决了[德国之声中文Twitter账号](https://twitter.com/dw_chinese)的简中推文常有错别字的问题。
+>解决[德国之声中文Twitter账号](https://twitter.com/dw_chinese)的简中推文常有错别字的问题。
+>（如果您想）不要捐助我们，请捐助[UNICEF](https://donate.unicef.org/donate/now)。
 
 基于[node-opencc](https://github.com/compulim/node-opencc)的繁简转换项目。无后端，保障隐私。
 
