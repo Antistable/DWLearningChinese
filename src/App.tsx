@@ -67,6 +67,7 @@ class App extends React.Component {
         this.state.simp;
     const converter = opencc.Converter(converterConfig);
     const convertedText = converter(textToConvert);
+
     this.copy(convertedText);
     const outputState =
       option === ConvertOption.ToSimp ?
@@ -83,7 +84,7 @@ class App extends React.Component {
     element.select();
     document.execCommand('copy');
     document.body.removeChild(element);
-  };
+  }
 
 }
 
