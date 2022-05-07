@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
 
 .app {
-  width: 500px;
+  width: 400px;
   opacity: 0.8;
   position: absolute;
   text-align: center;
-  left: calc(50% - 250px);
+  left: calc(50% - 200px);
   top: calc(50% - 290px);
   display: inline-block;
 }
@@ -14,9 +14,11 @@
   width: 100%;
   height: 250px;
   font-size: 30px;
+  padding: 10px 10px;
   resize: none;
   border-style: none;
   box-shadow: 10px 10px gainsboro;
+  -webkit-appearance: none;
   text-shadow: 1px 1px 1px rgb(0, 255, 149);
   font-weight: 500;
   font-family: Arial;
@@ -30,12 +32,21 @@
 .convert {
   width: 45%;
   height: 30px;
-  background-color: cornflowerblue;
-  border: inset;
+  background-color: skyblue;
+  border: outset;
+  outline: none;
   color: white;
   text-shadow: 1px 1px 1px rgb(0, 255, 149);
-  margin-left: 2%;
+  margin-left: 5%;
   font-size: large;
   font-weight: 500;
   font-family: Arial;
+}
+
+.convert:hover {
+  cursor: pointer;
+}
+
+.convert:active {
+  border-style: inset;
 }
