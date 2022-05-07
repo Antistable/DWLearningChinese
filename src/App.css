@@ -3,7 +3,7 @@
   opacity: 0.8;
   position: absolute;
   text-align: center;
-  left: calc(50% - 200px);
+  left: calc(50% - 210px);
   top: calc(50% - 310px);
   display: inline-block;
 }
@@ -46,4 +46,18 @@
 
 .convert:active {
   border-style: inset;
+}
+
+.donate{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+.github{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
 }

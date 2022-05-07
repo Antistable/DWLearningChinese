@@ -16,33 +16,41 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="app">
+      <>
+        <div className="app">
 
-        <textarea
-          className='input'
-          value={this.state.trad}
-          onChange={event => this.setState({ trad: event.target.value })}
-        ></textarea>
+          <textarea
+            className='input'
+            value={this.state.trad}
+            onChange={event => this.setState({ trad: event.target.value })}
+          ></textarea>
 
-        <br></br><br></br>
+          <br></br><br></br>
 
-        <button className='convert' onClick={() => this.convert(ConvertOption.ToTrad)}>
-          ⇱简转正并复制
-        </button>
+          <button className='convert' onClick={() => this.convert(ConvertOption.ToTrad)}>
+            ⇱简转正并复制
+          </button>
 
-        <button className='convert' onClick={() => this.convert(ConvertOption.ToSimp)}>
-          正轉簡並復製⇲
-        </button>
+          <button className='convert' onClick={() => this.convert(ConvertOption.ToSimp)}>
+            正轉簡並復製⇲
+          </button>
 
-        <br></br><br></br>
+          <br></br><br></br>
 
-        <textarea
-          className='input'
-          value={this.state.simp}
-          onChange={event => this.setState({ simp: event.target.value })}
-        ></textarea>
+          <textarea
+            className='input'
+            value={this.state.simp}
+            onChange={event => this.setState({ simp: event.target.value })}
+          ></textarea>
 
-      </div >
+        </div>
+        <a className='github' href='https://github.com/Antistable/DWLearningChinese' target='_blank'>
+          <img src={require('./imgs/github.png')}></img>
+        </a>
+        <a className='donate' href='https://donate.unicef.org/donate/now' target='_blank'>
+          <img src={require('./imgs/donate.png')}></img>
+        </a>
+      </>
     );
   }
 
