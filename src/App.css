@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
-
 .app {
   width: 400px;
   opacity: 0.8;
   position: absolute;
   text-align: center;
   left: calc(50% - 200px);
-  top: calc(50% - 290px);
+  top: calc(50% - 310px);
   display: inline-block;
 }
 
@@ -18,7 +16,6 @@
   resize: none;
   border-style: none;
   box-shadow: 10px 10px gainsboro;
-  -webkit-appearance: none;
   text-shadow: 1px 1px 1px rgb(0, 255, 149);
   font-weight: 500;
   font-family: Arial;

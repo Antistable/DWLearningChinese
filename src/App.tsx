@@ -39,7 +39,7 @@ class App extends React.Component {
         <textarea
           className='input'
           value={this.state.simp}
-          onChange={(event) => { this.setState({ simp: event.target.value }); }}
+          onChange={event => this.setState({ simp: event.target.value })}
         ></textarea>
 
       </div >
