@@ -44,11 +44,11 @@ class App extends React.Component {
           ></textarea>
 
         </div>
-        <a className='github' href='https://github.com/Antistable/DWLearningChinese' target='_blank'>
-          <img src={require('./imgs/github.png')}></img>
+        <a className='github' href='https://github.com/Antistable/DWLearningChinese'>
+          <img src={require('./imgs/github.png')} alt='GitHub Repo'></img>
         </a>
-        <a className='donate' href='https://donate.unicef.org/donate/now' target='_blank'>
-          <img src={require('./imgs/donate.png')}></img>
+        <a className='donate' href='https://donate.unicef.org/donate/now'>
+          <img src={require('./imgs/donate.png')} alt='Donate to UNICEF'></img>
         </a>
       </>
     );
@@ -68,22 +68,13 @@ class App extends React.Component {
     const converter = opencc.Converter(converterConfig);
     const convertedText = converter(textToConvert);
 
-    this.copy(convertedText);
+    navigator.clipboard.writeText(convertedText);
     const outputState =
       option === ConvertOption.ToSimp ?
         { simp: convertedText }
         :
         { trad: convertedText };
     this.setState(outputState);
-  }
-
-  copy(string: string) {
-    const element = document.createElement('textarea');
-    element.value = string;
-    document.body.appendChild(element);
-    element.select();
-    document.execCommand('copy');
-    document.body.removeChild(element);
   }
 
 }
